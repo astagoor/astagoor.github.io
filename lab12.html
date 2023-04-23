@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>lab12</title>
+</head>
+<body>
+    <div class="allcontent">
+        <div class="filter">
+            <label for="pirog">Пиріг</label>
+            <label for="tistechko">Тістечко</label>
+            <label for="rulet">Рулет</label>
+            <label for="tort">Торт</label>
+            <label for="surnik">Сирник</label>
+            <label for="clean">Скинути фільтр</label>
+            <div class="kkal">
+                <pre>Каллорії у порції:</pre>
+                <input type="range" min="0" max="400" value="200">
+                <pre>от 0 до 400</pre>
+            </div>
+        </div>
+
+        <input type="radio" name="filter" id="pirog" data-category="pirog">
+        <input type="radio" name="filter" id="tistechko" data-category="tistechko">
+        <input type="radio" name="filter" id="rulet" data-category="rulet">
+        <input type="radio" name="filter" id="tort" data-category="tort">
+        <input type="radio" name="filter" id="surnik" data-category="surnik">
+        <input type="radio" name="filter" id="clean" data-category="all" checked>
+        
+        <div class="container">
+            <div class="item tort" data-category="tort">
+                <img src="img/tortsmet.jpg" alt=""> 
+                <p>Торт: Сметанковий</p>
+                <pre>ккал:</pre>
+            </div>
+            <div class="item tistechko" data-category="tistechko">
+                <img src="img/mafin.png" alt="">
+                <p>Тістечко: Мафін</p>
+                <pre>ккал:</pre>
+            </div>
+            <div class="item surnik" data-category="surnik">
+                <img src="img/surniki.png" alt="">
+                <p>Сирники: Три ягоди</p>
+                <pre>ккал:</pre>
+            </div>
+            <div class="item tort" data-category="tort">
+                <img src="img/medovik.png" alt="">
+                <p>Торт: Смачний</p>
+                <pre>ккал:</pre>
+            </div>
+            <div class="item rulet" data-category="rulet">
+                <img src="img/rulet.png" alt="">
+                <p>Рулет: Святковий</p>
+                <pre>ккал:</pre>
+            </div>
+            <div class="item pirog" data-category="pirog">
+                <img src="img/pirog.png" alt="">
+                <p>Пиріг: Свято у бабусі</p>
+                <pre>ккал:</pre>
+            </div>
+            <div class="item tort" data-category="tort">
+                <img src="img/tort2.png" alt="">
+                <p>Торт: Ведмедик</p>
+                <pre>ккал:</pre>
+            </div>
+            <div class="item tort" data-category="tort">
+                <img src="img/pinktort.png" alt="">
+                <p>Торт: Живі квіти</p>
+                <pre>ккал:</pre>
+            </div>
+            <div class="item tistechko" data-category="tistechko">
+                <img src="img/lemon.png" alt="">
+                <p>Тістечко: Лимонне</p>
+                <pre>ккал:</pre>
+            </div>
+        </div>
+        <div class="footer">
+            <pre>Контакти: <a href="mailto:tortik@smakota.ua">tortik@smakota.ua</a></pre>
+            <p>2019 Smakota</p>
+        </div>
+    </div>
+    
+</body>
+</html>
